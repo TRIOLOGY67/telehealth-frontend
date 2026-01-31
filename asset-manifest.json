@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/telehealth-frontend/static/css/main.6e5a36c0.css",
+    "main.js": "/telehealth-frontend/static/js/main.3e76bba8.js",
+    "index.html": "/telehealth-frontend/index.html",
+    "main.6e5a36c0.css.map": "/telehealth-frontend/static/css/main.6e5a36c0.css.map",
+    "main.3e76bba8.js.map": "/telehealth-frontend/static/js/main.3e76bba8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6e5a36c0.css",
+    "static/js/main.3e76bba8.js"
+  ]
+}
