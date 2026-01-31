@@ -10,7 +10,7 @@ function Login() {
 
   const login = async () => {
     try {
-      const res = await axios.post("http://localhost:5000/login", data);
+      const res = await axios.post("https://telehealth-backend-4sqr.onrender.com/login", data);
 
       if (res.data.status === "success") {
         alert("Login Success");

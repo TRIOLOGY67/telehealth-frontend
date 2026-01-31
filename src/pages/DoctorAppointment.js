@@ -8,7 +8,7 @@ function DoctorAppointment() {
   const loadAppointments = useCallback(async () => {
     if (!doctorEmail) return;
 
-    const res = await axios.get(`http://localhost:5000/doctor-appointments/${doctorEmail}`);
+    const res = await axios.get(`https://telehealth-backend-4sqr.onrender.com/doctor-appointments/${doctorEmail}`);
     setAppointments(res.data);
   }, [doctorEmail]);
 
@@ -22,7 +22,7 @@ function DoctorAppointment() {
       return;
     }
 
-    await axios.post("http://localhost:5000/update-appointment-status", {
+    await axios.post("https://telehealth-backend-4sqr.onrender.com/update-appointment-status", {
       id: appointment.id,
       status: newStatus
     });

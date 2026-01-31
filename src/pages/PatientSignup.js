@@ -9,7 +9,7 @@ function PatientSignup() {
   const handleChange = e => setData({ ...data, [e.target.name]: e.target.value });
 
   const signup = async () => {
-    const res = await axios.post("http://localhost:5000/signup", data);
+    const res = await axios.post("https://telehealth-backend-4sqr.onrender.com/signup", data);
     if (res.data.status === "exists") {
       alert("User exists! Redirecting to login");
       nav("/login");

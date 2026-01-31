@@ -9,7 +9,7 @@ function BookAppointment() {
   const patientName = localStorage.getItem("userName") || "Ravi";
 
   useEffect(() => {
-    axios.get("http://localhost:5000/doctors")
+    axios.get("https://telehealth-backend-4sqr.onrender.com/doctors")
       .then(res => {
         console.log("Doctors loaded:", res.data);
         setDoctors(res.data);
@@ -33,7 +33,7 @@ function BookAppointment() {
     console.log("Sending appointment:", appointment);
 
     try {
-      const res = await axios.post("http://localhost:5000/book-appointment", appointment);
+      const res = await axios.post("https://telehealth-backend-4sqr.onrender.com/book-appointment", appointment);
       console.log("Server Response:", res.data);
       alert("Appointment Booked Successfully");
     } catch (err) {
